@@ -1,93 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INUGAMES - Community-Driven Crypto Games</title>
-<link rel="icon" href="/favicon.ico" />
-<style>
-    body {
-      background: black;
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Community-Driven Crypto Games"
+    />
+    <meta
+      name="keywords"
+      content="games,ethereum,p2e,play to earn,community,ecosystem"
+    />
+    <title>INUGAMES - Community-Driven Crypto Games</title>
+    <style>
+      html {
         margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BiUlm18K.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B_lWW9Hx.css">
+  </head>
+  <body>
+    <div id="app"></div>
 
-    .container {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: url('/images/inugames-logo.svg') no-repeat center center;
-        background-size: contain;
-    }
-
-    .countdown {
-        position: absolute;
-        bottom: 25%;
-        width: 100%;
-        text-align: center;
-        font-size: 24px;
-        color: #fff;
-    }
-
-    nav {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin: 10px 0;
-        padding: 0;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-    }
-
-    nav ul li a:hover {
-        color: #ddd;
-    }
-</style>
-</head>
-<body>
-
-<div class="container">
-    <div class="countdown" id="countdown">Loading countdown...</div>
-</div>
-
-<nav>
-    <ul>
-        <li><a href="https://t.me/inudotgames"><img width="30" height="30" src="/images/telegram.svg" alt="Telegram Icon" /></a></li>
-        <li><a href="https://twitter.com/inudotgames"><img width="30" height="30" src="/images/x.svg" alt="X Icon" /></a></li>
-        <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0x64669032f612Ae608671853fF8871dF0889870A9"><img width="30" height="30" src="/images/dextools.svg" alt="Dextools Icon" /></a></li>
-    </ul>
-</nav>
-
-<script>
-    var countDownDate = Date.UTC(2024, 9, 18, 16, 59, 59);
-    var countdownfunction = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-        if (distance < 0) {
-            clearInterval(countdownfunction);
-            document.getElementById("countdown").innerHTML = "WAIT FOR IT";
-        }
-    }, 1000);
-</script>
-
-</body>
+  </body>
 </html>
